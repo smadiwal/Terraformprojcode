@@ -1,6 +1,7 @@
-resource "aws_vpc" "vnet" {
-  cidr_block = "10.100.10.0/16"
+resource "aws_instance" "Aws_Server1" {
+  ami           = "ami-06b21ccaeff8cd686"
+  instance_type = "t2.micro"
   tags = {
-    Name = "demovpc"
+    Name = "Aws_Server1"
   }
 }
